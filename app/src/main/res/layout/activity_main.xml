@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMonNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nom"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInstitutGrasset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nom_college"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMonNom" />
+
+    <TextView
+        android:id="@+id/textViewNomProgramme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nomProgramme"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstitutGrasset" />
+
+    <TextView
+        android:id="@+id/textViewNomCours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nomCours"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomProgramme" />
+
+    <TextView
+        android:id="@+id/textViewRemis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/remis"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNomCours" />
+
+    <TextView
+        android:id="@+id/textViewDateRemise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/remisData"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemis" />
+
+    <Button
+        android:id="@+id/buttonMainPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/interactive_purple_button"
+        android:backgroundTint="@color/violetFonce"
+        android:fontFamily="@font/roboto"
+        android:onClick="mainVersMenu"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/textButtonMain"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

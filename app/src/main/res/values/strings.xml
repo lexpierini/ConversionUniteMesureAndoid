@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">APierini_PNM_TP1</string>
+    <string name="nom">Alex Forastier Pierini</string>
+    <string name="nom_college">Institut Grasset</string>
+    <string name="nomProgramme">Techniques de l\'Informatique</string>
+    <string name="nomCours">Programmation native mobile Android</string>
+    <string name="remis">TP1 – Remis à Pascal Guy</string>
+    <string name="remisData">2020 - 03 - 02</string>
+    <string name="textButtonMain">Continuer vers le convertisseur</string>
+    <string name="menuTitre">Convertisseur d’unité de mesure</string>
+    <string name="menuSousTitre">Menu principal</string>
+    <string name="buttonViewTemperature">Température</string>
+    <string name="buttonViewDistance">Distance</string>
+    <string name="buttonViewMasse">Masse</string>
+    <string name="buttonQuitter">Quitter</string>
+    <string name="temperatureSousTitre">Témperature à convertir</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="resultat">Résultat</string>
+    <string name="valeurAConvertir">Entrez la valeur à convertir</string>
+    <string name="cm">cm</string>
+    <string name="m">m</string>
+    <string name="km">km</string>
+    <string name="pouce">pouce</string>
+    <string name="pied">pied</string>
+    <string name="mile">mile</string>
+    <string name="kg">kg</string>
+    <string name="livre">livre</string>
+    <string name="kgVersLivre">Kg - Livre</string>
+    <string name="Unit_de_Depart">Unit de Depart</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasseActivity">
+
+    <EditText
+        android:id="@+id/textResultatMasse"
+        android:layout_width="200dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/violetFonce"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="true"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textColor="@color/violetClair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMasseResultat" />
+
+    <TextView
+        android:id="@+id/textViewMasseResultat"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/resultat"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <EditText
+        android:id="@+id/textDepartMasse"
+        android:layout_width="200dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints=""
+        android:backgroundTint="@color/violetFonce"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/violetClair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMasseAConvertir" />
+
+    <TextView
+        android:id="@+id/textViewMasseAConvertir"
+        android:layout_width="220dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/valeurAConvertir"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMasseTitre" />
+
+    <TextView
+        android:id="@+id/textViewMasseTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/buttonViewMasse"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:checked="false"
+        android:fontFamily="@font/roboto"
+        android:showText="true"
+        android:switchTextAppearance="@style/switch1"
+        android:textAlignment="center"
+        android:textColor="@color/orangeFonce"
+        android:textOff="@string/kg"
+        android:textOn="@string/livre"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:thumb="@drawable/interactive_purple_button"
+        android:thumbTextPadding="15dp"
+        android:thumbTint="@color/violetFonce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDepartMasse" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/Unit_de_Depart"
+        android:textColor="@color/orangeFonce"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
