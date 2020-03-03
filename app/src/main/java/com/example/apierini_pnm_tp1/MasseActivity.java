@@ -39,6 +39,7 @@ public class MasseActivity extends AppCompatActivity implements TextWatcher {
         MasseFrom.addTextChangedListener(this);
 
         Switch sw = findViewById (R.id.switch1);
+        sw.setChecked(false);
         sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView,
@@ -46,9 +47,8 @@ public class MasseActivity extends AppCompatActivity implements TextWatcher {
                 if(isChecked){
                     if (!MasseFrom.getText().toString().isEmpty())
                         quelCalcul("livre", "kg", Float.parseFloat(MasseFrom.getText().toString()));
-                }else{
+                } else {
                     if (!MasseFrom.getText().toString().isEmpty())
-                        System.out.println("entrou aqui");
                         quelCalcul("kg", "livre", Float.parseFloat(MasseFrom.getText().toString()));
                 }
             }
@@ -109,9 +109,7 @@ public class MasseActivity extends AppCompatActivity implements TextWatcher {
         TextView masseTo = findViewById(R.id.textResultatMasse);
 
         /*  Choix multiple basé sur l'unité de depart. Dans chaque cas, on teste l'unité de conversion
-            et on appelle la méthode correspondante. Les autres cas ne requiers pas de conversion */
-
-        // UnitDepart == "kg" ? MasseConvertie = kgEnLivre(MasseDepart) : MasseConvertie = livreEnKg(MasseDepart);
+            et on appelle la méthode correspondante.*/
 
         if (UnitDepart == "kg") {
             MasseConvertie = kgEnLivre(MasseDepart);
